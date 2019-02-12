@@ -73,14 +73,9 @@ window.onload = function() {
     
     // 次の画像を表示
     $imgDoc.src = imgList[currentImgNo].innerHTML;
-    
-    // 何番目の画像を表示しているか、ページ中で示す
     dispImgPosition();
   }
   
-  // 最初に1枚目の画像を表示
-  $imgDoc.src = imgList[currentImgNo].innerHTML;
-            
   // 「次へ」ボタンのクリック処理（画像の切り替え）
   document.getElementById('next_btn').onclick = function() {
     // スライドショーを一旦中止
@@ -92,12 +87,10 @@ window.onload = function() {
       //次の画像を表示
       currentImgNo++;
       $imgDoc.src = imgList[currentImgNo].innerHTML;
+      dispImgPosition();
       
       // ボタンがクリックされたため、アイコンを一定時間変更
       tmp_change_disp_img("next_btn", "./data/btn/next_click_btn.png");
-      
-      // 何番目の画像を表示しているか、ページ中で示す
-      dispImgPosition();
     }
     
     // スライドショーを再開
@@ -115,12 +108,10 @@ window.onload = function() {
       // 1つ前の画像を表示
       currentImgNo--;
       $imgDoc.src = imgList[currentImgNo].innerHTML;
+      dispImgPosition();
       
       // ボタンがクリックされたため、アイコンを一定時間変更
       tmp_change_disp_img("prev_btn", "./data/btn/prev_click_btn.png");
-      
-      // 何番目の画像を表示しているか、ページ中で示す
-      dispImgPosition();
     }
     
     // スライドショーを再開
@@ -228,6 +219,10 @@ window.onload = function() {
   
   // BGMの自動再生
   autoPlayBgm();
+  
+  // 最初に1枚目の画像を表示
+  $imgDoc.src = imgList[currentImgNo].innerHTML;
+  dispImgPosition();
   
   // スライドショーの開始
   interval_id = setInterval(slideshow, SLIDE_SHOW_INTERVAL_MS);
