@@ -1,0 +1,99 @@
+html{
+  height: 100%;
+  background: rgb(91, 155, 213);
+}
+
+div#header{
+  width: 100%;
+  background-color: orange;
+}
+
+div#header_area{
+  width: 1000px;
+  margin: 0 auto;
+  color: white;
+  font-size: xx-large;
+  text-align: center;
+}
+
+body{
+  overflow:hidden;
+}
+
+div#main{
+  width: 100%;
+}
+
+div#main_area{
+  width: 1000px;
+  margin: 0 auto;
+  padding-top: 10px;
+}
+
+div#slide_area{
+  text-align: center;
+}
+
+#slide_image{
+  width: 90%;  
+}
+
+div#panel_area{
+  width: 90%;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 5px solid #ED7D31;
+
+  -moz-border-radius:10px;
+  -webkit-border-radius:10px;
+  border-radius:10px;
+}
+
+div#panel_area_slide{
+  float: left;
+  width: 40%;
+  padding: 10px;
+}
+
+div#panel_area_sound{
+  float: right;
+  width: 40%;
+  padding-top:    10px;
+  padding-bottom: 10px;
+  padding-left:   20px;
+  padding-right:  20px;
+}
+
+div.panel-area-element-title{
+  margin-bottom: 10px;
+  border-bottom: dotted white;
+  color: white;
+  font-size: x-large;
+  text-align: center;
+}
+
+div#panel_area_slide_info{
+  padding-top: 15px;
+  color: white;
+  font-size: x-large;
+  text-align: center;
+}
+
+div#panel_area_bgm_info{
+  color: white;
+  font-size: x-large;
+  text-align: center;
+}
+
+.sound-top-icon{
+ width: 30%; 
+}
+
+.sound-bottom-icon{
+  width: 45%;
+}
+
+.img-btn{
+  width: 45%;
+}

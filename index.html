@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>スライドショー</title>
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/sp.css" media="screen and (max-width: 1024px)">
+  <link rel="stylesheet" href="./css/pc.css" media="screen and (min-width: 1024px)">
+  
+  <script type="text/javascript" src="js/javascript.js"></script>
+</head>
+
+<body>
+  <div id="header">
+    <div id="header_area">
+      スライドショー
+    </div> <!-- header_area -->
+  </div> <!-- header -->
+ 
+  <div id="main" class="clearfix">
+    <div id="main_area" class="clearfix">
+      <div id="slide_area">
+        <img src="" id="slide_image">
+      </div> <!-- slide_area -->
+      
+      <div id="panel_area" class="clearfix">
+        <div id="panel_area_slide">
+          <div class="panel-area-element-title">
+            スライド操作
+          </div> <!-- panel-area-element-title -->
+          
+          <div id="panel_area_slide_img">
+            <img src="./data/btn/prev_btn.png" id="prev_btn" class="img-btn">
+            <img src="./data/btn/next_btn.png" id="next_btn"  class="img-btn">
+          </div> <!-- panel_area_slide_img -->
+          
+          <div id="panel_area_slide_info">
+            1 / 3
+          </div> <!-- panel_area_slide_info -->
+          
+        </div> <!-- panel_area_slide -->
+        
+        <div id="panel_area_sound">
+          <div class="panel-area-element-title">
+            サウンド操作
+          </div> <!-- panel-area-element-title -->
+          
+          <div class="panel-area-sound-elem">
+            <img src="./data/btn/play_btn.png" id="bgm_play" class="sound-top-icon">
+            <img src="./data/btn/pause_btn.png" id="bgm_pause" class="sound-top-icon">
+            <img src="./data/btn/stop_btn.png" id="bgm_stop" class="sound-top-icon">
+          </div> <!-- panel-area-sound-elem -->
+          
+          <div class="panel-area-sound-elem">
+            <img src="./data/btn/sound_up_btn.png" id="bgm_up" class="sound-bottom-icon">
+            <img src="./data/btn/sound_down_btn.png" id="bgm_down" class="sound-bottom-icon">
+          </div> <!-- panel-area-sound-elem -->
+          
+          <div id="panel_area_bgm_info">
+            100 %
+          </div> <!-- panel_area_bgm_info -->
+      </div> <!-- panel_area -->
+      
+    </div> <!-- main_area -->
+  </div> <!-- main -->
+</body>
+</html>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="testxsl.xsl"?>
+<data>
+  <img_list>
+    <img_file>./data/img/fireworks1.jpg</img_file>
+    <img_file>./data/img/fireworks2.png</img_file>
+    <img_file>./data/img/fireworks3.gif</img_file>
+  </img_list>
+
+  <bgm_file>./data/bgm/bgm.mp3</bgm_file>
+</data>
